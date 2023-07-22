@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iris Data Prediction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 28px;
+      margin: 20px 0;
+      color: #007bff;
+    }
+
+    .form-container {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      padding: 10px;
+    }
+
+    label {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background-color: #007bff;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h3>Iris Data Prediction</h3>
+
+  <div class="form-container">
+    <form action="/predict" method="POST">
+      <label for="sepal_length">Sepal Length</label>
+      <input type="text" id="sepal_length" name="sepal_length" placeholder="Enter sepal length">
+      <br>
+      <label for="sepal_width">Sepal Width</label>
+      <input type="text" id="sepal_width" name="sepal_width" placeholder="Enter sepal width">
+      <br>
+      <label for="petal_length">Petal Length</label>
+      <input type="text" id="petal_length" name="petal_length" placeholder="Enter petal length">
+      <br>
+      <label for="petal_width">Petal Width</label>
+      <input type="text" id="petal_width" name="petal_width" placeholder="Enter petal width">
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

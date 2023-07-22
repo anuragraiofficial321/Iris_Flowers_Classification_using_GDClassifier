@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iris Data Prediction Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .prediction-container {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .prediction {
+      font-size: 28px;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .predicted-class {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .prediction-note {
+      font-size: 16px;
+      color: #555;
+      margin-top: 20px;
+    }
+
+    .go-back-link {
+      display: inline-block;
+      color: #007bff;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .go-back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="prediction-container">
+    <p class="prediction">Iris Data Prediction Result</p>
+    <p class="predicted-class" id="prediction-result">Predicted Iris Class: {{ prediction }}</p>
+    <p class="prediction-note">Please note that this prediction is based on the input provided earlier.</p>
+    <a class="go-back-link" href="/">Go back to input form</a>
+  </div>
+</body>
+</html>
